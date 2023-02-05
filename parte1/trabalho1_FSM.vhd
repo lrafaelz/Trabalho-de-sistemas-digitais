@@ -61,7 +61,7 @@ architecture behavior of trabalho1_FSM is
                 end case;
         end process;
 
-        process(next_state)
+    process(next_state)
         begin
             case next_state is
                 when PCpp =>

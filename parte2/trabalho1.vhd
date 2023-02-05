@@ -27,9 +27,6 @@ architecture behavior of trabalho1 is
 type mem is array (0 to 15) of std_logic_vector(7 downto 0);
 signal PC : std_logic_vector(3 downto 0):= "0000";
 signal RDM : std_logic_vector(7 downto 0);
-signal add : std_logic_vector(3 downto 0);
-signal sub : std_logic_vector(3 downto 0);
-signal mult : std_logic_vector(7 downto 0); -- lembrar de fazer o resize
 signal mux_ULA : std_logic_vector(3 downto 0);
 signal comp : std_logic;
 signal Z : std_logic;
@@ -139,5 +136,3 @@ begin
     end process;
 
 end behavior;
-
--- make an explanation of the code here
